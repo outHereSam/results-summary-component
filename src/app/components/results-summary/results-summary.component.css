@@ -1,5 +1,5 @@
 .container {
-  max-width: 746px;
+  /* max-width: 746px; */
   display: flex;
   background-color: var(--white);
   box-shadow: 0 20px 40px rgba(52, 46, 234, 0.05);

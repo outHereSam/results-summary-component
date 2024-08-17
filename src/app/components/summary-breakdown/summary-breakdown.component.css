@@ -16,4 +16,14 @@ button.continue {
   padding: 20px 0;
   background-color: var(--dark-gray-blue);
   border-radius: 30px;
+  cursor: pointer;
+  margin: 20px 0 0 0;
+}
+
+button.continue:hover {
+  background: linear-gradient(
+    to bottom,
+    var(--light-stale-blueBG),
+    var(--light-royal-blueBG)
+  );
 }

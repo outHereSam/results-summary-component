@@ -8,6 +8,7 @@
     var(--light-royal-blueBG)
   );
   border-radius: 30px;
+  height: 100%;
 }
 
 h4 {

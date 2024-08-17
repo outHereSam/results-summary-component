@@ -1,1 +1,10 @@
-<p>category works!</p>
+<div [class]="category.category" class="category-card">
+  <div class="left">
+    <img [src]="category.icon" alt="icon" />
+    <h4 class="category-name">{{ category.category }}</h4>
+  </div>
+
+  <div class="right">
+    <h4>{{ category.score }} / <span>100</span></h4>
+  </div>
+</div>
