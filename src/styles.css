@@ -22,10 +22,14 @@
   --dark-gray-blue: hsl(224, 30%, 27%);
 }
 
-body {
+body,
+button {
   font-family: "Hanken Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+body {
   font-size: 18px;
   height: 100vh;
 }
