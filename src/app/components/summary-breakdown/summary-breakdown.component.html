@@ -2,7 +2,9 @@
   <h3 class="title">Summary</h3>
 
   <div class="categories">
-    <app-category />
+    @for(category of categories; track category.id) {
+    <app-category [category]="category" />
+    }
   </div>
 
   <button class="continue">Continue</button>

@@ -5,11 +5,12 @@ import { Category } from '../../ICategory';
   providedIn: 'root',
 })
 export class CategoryService {
-  protected categories: Category[] = [];
+  url = `http://localhost:3000/categories`;
 
   constructor() {}
 
-  getAllCategories(): Category[] {
-    return this.categories;
+  async getAllCategories(): Promise<Category[]> {
+    const data = await fetch(this.url);
+    return (await data.json()) ?? [];
   }
 }

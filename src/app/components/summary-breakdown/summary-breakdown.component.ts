@@ -15,6 +15,8 @@ export class SummaryBreakdownComponent {
   categoryService: CategoryService = inject(CategoryService);
 
   constructor() {
-    this.categories = this.categoryService.getAllCategories();
+    this.categoryService.getAllCategories().then((categories: Category[]) => {
+      this.categories = categories;
+    });
   }
 }
