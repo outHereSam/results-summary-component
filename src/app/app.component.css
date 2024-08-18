@@ -1,6 +1,14 @@
-.container {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media only screen and (max-width: 768px) {
+  .container {
+    /* border: solid 1px pink; */
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
